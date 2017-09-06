@@ -1,0 +1,26 @@
+{
+  "name": "bookstorerestapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "sudo nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lephuongtu271094/BookStoreRestApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lephuongtu271094/BookStoreRestApi/issues"
+  },
+  "homepage": "https://github.com/lephuongtu271094/BookStoreRestApi#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "pg-monitor": "^0.8.2",
+    "pg-promise": "^6.5.1"
+  }
+}

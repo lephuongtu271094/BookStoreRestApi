@@ -1,0 +1,1 @@
+// api/detail --> lấy dữ liệu 1 item
