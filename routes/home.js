@@ -34,7 +34,7 @@ module.exports.home = function (app) {
                     home.count_category(cat)
                 ])
             }).then(data => {
-                res.json({
+                res.status(200).json({
                     category: data[0],
                     dataCat : data[1],
                     count : data[2][0]
@@ -47,12 +47,14 @@ module.exports.home = function (app) {
             db.task(t => {
                 return t.batch([
                     home.dataMenu(),
-                    home.dataDetail(detail)
+                    home.dataDetail(detail),
+                    home.rate(detail)
                 ])
             }).then(data => {
                 res.json({
                     category: data[0],
-                    dataDetail : data[1]
+                    dataDetail : data[1],
+                    rate : data[2]
                 })
             }).catch(error => { console.log(error.message)});
         })
